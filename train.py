@@ -48,10 +48,8 @@ def dqn(n_episodes=2000, max_t=1000, eps_start=1.0, eps_end=0.01, eps_decay=0.99
 
 
 env = UnityEnvironment(file_name="Banana_Windows_x86_64/Banana.exe")
-
 brain_name = env.brain_names[0]
 brain = env.brains[brain_name]
-
 env_info = env.reset(train_mode=False)[brain_name]
 action_size = brain.vector_action_space_size
 state_size = len(env_info.vector_observations[0])
