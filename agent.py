@@ -85,8 +85,7 @@ class Agent():
         """
         states, actions, rewards, next_states, dones = experiences
 
-        ## TODO: compute and minimize the loss
-        "*** YOUR CODE HERE ***"
+        # compute and minimize the loss
         self.optimizer.zero_grad()
 
         output = self.qnetwork_local(states).gather(1, actions)
