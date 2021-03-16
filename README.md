@@ -3,8 +3,6 @@ The banana agent uses Deep Q-Learning to traverse through a world of bananas to 
 
 This project includes scripts that you can use to train and test the agent.
 
-<br/>
-
 # Environment
 The agent is placed in a square world where yellow and blue bananas are randomly placed. A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana. The goal of the agent is to collect as many yellow bananas as possible while avoiding blue bananas.
 
@@ -16,8 +14,6 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
 
 The task is episodic and is considered solved when the agent gets an average score of +13 over 100 consecutive episodes.
 
-<br/>
-
 # Requirements
 - conda
 - [drlnd](https://github.com/udacity/deep-reinforcement-learning#dependencies) environment
@@ -27,18 +23,14 @@ The task is episodic and is considered solved when the agent gets an average sco
 
 For Linux and Mac OSX users, you will need to place the unity environment file in the current folder and unzip/decompress the file. Afterwards, you will need to navigate to `model.py` and `train.py`, then change the `file_name` parameter for the instantiated `UnityEnvironment` class to match the location of the Unity environment that you downloaded.
 
-<br/>
-
 # Instructions
-## Training
+### Training
 ```bash
 python train.py
 ```
 Note that once the average score reaches +13 or above, the script will automatically save and update the model weights to `checkpoint.pth` file.
 
-<br/>
-
-## Testing
+### Testing
 ```bash
 python test.py
 ```
