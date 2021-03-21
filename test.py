@@ -6,7 +6,7 @@ from collections import deque
 import matplotlib.pyplot as plt
 import numpy as np
 
-def test(n_episodes=5, max_t=1000, file="saved_model_weights.pth"):
+def test(n_episodes=10, max_t=1000, file="saved_model_weights.pth"):
     """Performs tests on an already trained Deep Q-Learning agent.
     
     Params

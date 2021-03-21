@@ -1,7 +1,9 @@
 # Banana Agent
-The banana agent uses Deep Q-Learning to traverse through a world of bananas to maximize score.
+The banana agent uses Deep Q-Learning to traverse through a world of bananas.
 
 This project includes scripts that you can use to train and test the agent.
+
+See `Report.md` for explanation of the agent's architecture and training result.
 
 # Environment
 The agent is placed in a square world where yellow and blue bananas are randomly placed. A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana. The goal of the agent is to collect as many yellow bananas as possible while avoiding blue bananas.
